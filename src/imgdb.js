@@ -98,7 +98,7 @@ const images = [
 
     path: "src/images/NotreDameduHaut2.jpg",
     description:
-      "<p>LeCorbusier often presented a blend of architecture and sculpture in his designs. Here, a jutting bow of a ship is suggested at Notre Dame du Haut.</p><p>Note the austere, unglamorous staircase suggesting it's addition was merely an afterthought. A kind of neglected appearance, a bit like a worksman's ladder left in place accidentally after going home for the day.",
+      "<p>LeCorbusier often presented a blend of architecture and sculpture in his designs. Here, a jutting bow of a ship is suggested at Notre Dame du Haut.</p><p>Note the austere, unglamorous staircase suggesting its addition was merely an afterthought. A kind of neglected appearance, a bit like a worksman's ladder left in place accidentally after going home for the day.",
     caption: "Notre Dame du Haut."
   },
   {

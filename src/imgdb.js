@@ -2,7 +2,7 @@ const images = [
   {
     id: "100",
     path: "src/images/MantuaTitle.jpg",
-    caption: "this is a test"
+    caption: ""
   },
   {
     id: "120",
@@ -91,7 +91,7 @@ const images = [
     id: "255",
 
     path: "src/images/NotreDameduHautTitleLeCorbusier.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "260",
@@ -106,13 +106,13 @@ const images = [
 
     path: "src/images/NotreDameduHaut3.jpg",
     description: `<p>The site of Notre Dame du Haut was a spot in France sacred to the veneration of the Virgin Mary.</p><p>It is interesting to see that Le Corbusier created a roof line on the church that resembles the extraordinary shape of a French nun’s habit (head covering).</p>`,
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "280",
 
     path: "src/images/NotreDameduHaut4.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "300",
@@ -131,66 +131,66 @@ const images = [
   {
     id: "310",
     path: "src/images/RonchampInterior1.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "320",
     path: "src/images/RonchampInterior2.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "330",
     path: "src/images/RonchampInterior3.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "340",
     path: "src/images/RonchampInterior4.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "350",
     path: "src/images/RonchampInterior6.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "360",
     path: "src/images/RonchampInterior9.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "370",
     path: "src/images/RonchampPlanOld.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "380",
     path: "src/images/Ronchampsblurrybutgood.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "390",
     path: "src/images/RonchamptInterior5.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "400",
     path: "src/images/RonchamptInterior7.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "410",
     path: "src/images/RonchamptInterior8.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "420",
     path: "src/images/RonchampwithPeople.jpg",
-    caption: "TBD"
+    caption: ""
   },
   {
     id: "430",
     path: "src/images/RonchampwithPeopleColor.jpg",
-    caption: "TBD"
+    caption: ""
   }
 ];

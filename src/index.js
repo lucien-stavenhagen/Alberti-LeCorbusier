@@ -66,7 +66,7 @@ class DynamicGridView {
         let clone = document.importNode(t.content, true);
         let atag = clone.querySelector("a");
         atag.setAttribute("data-id", this.imglist[i].id);
-        atag.setAttribute("href", `/slide.html?id=${this.imglist[i].id}`);
+        atag.setAttribute("href", `slide.html?id=${this.imglist[i].id}`);
         let itag = clone.querySelector(".grid-image");
         itag.setAttribute("src", this.imglist[i].path);
         let stag = clone.querySelector(".grid-caption");

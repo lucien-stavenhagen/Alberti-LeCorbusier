@@ -1,0 +1,215 @@
+* {
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.descriptor {
+  text-align: center;
+  margin: 0 0 2px 0;
+  background-color: rgba(15, 61, 88, 0.1);
+  border-bottom: 2px solid rgba(16, 72, 156, 0.3);
+}
+
+.descriptor h1 {
+  margin: 0;
+  color: #10489c;
+  padding: 0.5rem;
+}
+
+.button-group {
+  background-color: rgba(156, 49, 16, 0.05);
+  text-align: center;
+}
+
+.button-group #toggle-carousel {
+  padding: 1rem;
+  margin: 0.3rem;
+}
+
+/* carousel */
+#display-carousel {
+  background-color: rgba(16, 156, 58, 0.05);
+}
+
+.carousel-img-card {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.carousel-img-card #previous,
+.carousel-img-card #next {
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 2.5rem;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.carousel-img-card #previous {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel-img-card #next {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel-img-card #previous:hover,
+.carousel-img-card #next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.carousel-img-frame {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / span 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.carousel-img-frame .carousel-image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.carousel-img-frame .carousel-caption {
+  max-width: 100%;
+  width: auto;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+}
+
+#carousel-container {
+  width: 90%;
+  margin: auto;
+  -ms-grid-columns: minmax(min-content, 768px);
+      grid-template-columns: minmax(-webkit-min-content, 768px);
+      grid-template-columns: minmax(min-content, 768px);
+  grid-gap: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* grid */
+#display-gridview {
+  background-color: rgba(16, 72, 156, 0.05);
+}
+
+#grid-container {
+  width: 90%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#grid-container .grid-img-frame {
+  padding: 3px;
+  border: 2px solid white;
+  -webkit-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+
+#grid-container .grid-img-frame .grid-img-card {
+  padding: 0;
+  margin: 0;
+}
+
+#grid-container .grid-img-frame .grid-img-card .grid-image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 150px;
+}
+
+#grid-container .grid-img-frame .grid-img-card .grid-caption {
+  max-width: 100%;
+  width: auto;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+}
+
+#grid-container .grid-img-frame:hover {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 960px) {
+  #grid-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #grid-container .grid-img-frame .grid-img-card .grid-image {
+    max-height: 220px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #grid-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #grid-container .grid-img-frame .grid-img-card .grid-image {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #grid-container .grid-img-frame .grid-img-card .grid-image {
+    max-height: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

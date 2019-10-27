@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./src/css/normalize.css">
+        <link rel="stylesheet" href="./src/css/index.css">
+
+        <title>Grid view</title>
+    </head>
+
+    <body>
+        <div class="descriptor">
+            <h1>Leon Battista Alberti, <cite>Church of Sant'Andrea</cite></h1>
+            <h1>Le Corbusier, <cite>Notre Dame du Haut</cite></h1>
+        </div>
+        <div id="display-gridview"></div>
+        <div class="descriptor">
+            <h1>Image Carousel</h1>
+        </div>
+        <div class="button-group">
+            <button id="toggle-carousel" onclick="doSlides.toggleSlides()">Carousel Off</button>
+        </div>
+        <div id="display-carousel"></div>
+    </body>
+    <template id="carousel">
+        <div class="fadeIn carousel-img-frame">
+            <figure class="carousel-img-card">
+                <div id="previous" onclick="car.showNextSlide(-1)">
+                    &#10094
+                </div>
+                <div id="next" onclick="car.showNextSlide(1)">&#10095</div>
+                <a target="_blank">
+                    <img class="carousel-image"></a>
+                <figcaption class="carousel-caption"></figcaption>
+            </figure>
+        </div>
+    </template>
+    <template id="grid-view">
+        <div class="grid-img-frame">
+            <figure class="grid-img-card">
+                <a>
+                    <img class="grid-image"></a>
+                <figcaption class="grid-caption"></figcaption>
+            </figure>
+        </div>
+    </template>
+    <script src="./src/imgdb.js"></script>
+    <script src="./src/index.js"></script>
+
+</html>

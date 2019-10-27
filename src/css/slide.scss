@@ -1,0 +1,57 @@
+$greentrans: rgba(16, 156, 58, 0.05);
+$redtrans: rgba(156, 49, 16, 0.05);
+$bluetrans: rgba(16, 72, 156, 0.05);
+* {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  p {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    background-color: $bluetrans;
+  }
+}
+.slide-container {
+  padding: 1rem;
+  background-color: $greentrans;
+  > p {
+    padding: 1.5rem;
+    background-color: $redtrans;
+  }
+  figure {
+    margin: 0;
+    padding: 0;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+      display: block;
+    }
+    figcaption {
+      padding: 1rem;
+      text-align: center;
+      background-color: $bluetrans;
+    }
+  }
+}
+
+/* grid utilities*/
+.two-rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.one-row {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .two-rows {
+    grid-template-columns: 1fr;
+  }
+}

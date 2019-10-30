@@ -1,3 +1,5 @@
+import { images } from "./imgdb";
+
 class DynamicGridView {
   constructor() {
     this.imglist = images;

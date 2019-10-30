@@ -1,4 +1,4 @@
-const images = [
+export const images = [
   {
     id: "100",
     path: "src/images/MantuaTitle.jpg",
